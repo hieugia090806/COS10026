@@ -1,0 +1,152 @@
+/* Basic Styling */
+#background-video {
+    position: fixed; /* Stays in place even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes the video cover the entire viewport */
+}
+
+.rectangle {
+    position: absolute; /* Or fixed, as you prefer */
+    top: 0;
+    left: 0;
+    width: 57%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    background-color: lightblue; /* Or your blue color */
+    display: flex; /* Enable Flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top */ /* Changed this line */
+    padding-top: 20px; /* Add top padding to create space */ /* Changed this line */
+    gap: 20px; /* Adjust spacing between items */
+}
+
+.company-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally within name container */
+    line-height: 1.2;
+    margin-right: auto; /* Push name to the left */
+    margin-left: 20px; /* Add space from the left edge */
+}
+
+.company-name span {
+    display: block;
+    font-size: 1.2em; /* Adjust as needed */
+    font-weight: bold; /* Adjust as needed */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adjust spacing between links */
+    /* No margin adjustments here - let them stay where they are */
+}
+
+.rectangle a {
+    color: black;
+    text-decoration: none;
+    font-size: 0.95em; /* Adjust as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    background-color: transparent; /* Or a different background color */
+    transition: background-color 0.3s ease;
+    border: none;
+    font-weight: bold; /* Adjust as needed */
+}
+
+.rectangle a:hover {
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adjust spacing between links */
+    /* No margin adjustments here - let them stay where they are */
+}
+
+
+.company-name {
+    position: absolute; /* Key: Absolute positioning */
+    top: 50%; /* Position vertically in the middle */
+    left: 28.5%; /* Position horizontally in the middle of the .rectangle */
+    transform: translate(-50%, -50%); /* Center precisely */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #1565C0;
+    line-height: 1;
+    z-index: 2; /* Ensure it's above the rectangle */
+    width: 57%;
+    margin-top: -140px; /* Add space below the name */
+    margin-left: -100px;
+    color: #38b6ff;
+}
+
+.company-name br {
+    display: block;
+    margin: 12px 0px; /* Changed from 5px to 7px */
+    margin-left: -150px; /* Adjust as needed */
+}
+
+.company-name span {
+    display: inline-block; /* Key: Make the span a block element for padding to work */
+    padding-left: 180px; /* Adjust this value to shift right */
+    color: #5271ff;
+}
+
+.image-container {
+    position: absolute;
+    top: 50%;
+    left: 45px; /* Adjust left position as needed */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row; /* Text to the right of image */
+    align-items: flex-start; /* Align to top */
+    z-index: 2;
+    margin-top: 140px; /* Adjust as needed */
+}
+
+.company-image {
+    width: 25%; /* Adjust as needed */
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 35px;
+}
+
+.image-text {
+    flex: 1; /* Takes remaining space */
+    padding: 30px;
+    margin-left: 20px; /* Increased margin to move text further right */
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+    word-wrap: normal;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .rectangle {
+        flex-direction: column; /* Stack name and links vertically on smaller screens */
+        height: auto; /* Adjust height as needed */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links horizontally */
+    }
+
+    .company-name {
+        margin: 0 auto; /* Center name */
+        margin-bottom: 10px; /* Add space below name */
+    }
+
+}
