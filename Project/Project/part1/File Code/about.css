@@ -1,0 +1,137 @@
+.timetable{
+    border: 2.5px, solid, black;
+    border-collapse: collapse;
+    width: 70%;
+    height: 15em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    margin-bottom: 7%;
+    margin-left: 10%; /* Adjust this value as needed */
+}
+caption{
+    text-align: left;
+    font-size: 2em;
+}
+#groupIm{
+    max-width: 250PX;
+    border-radius: 15%;
+    margin-left: 625px;
+    margin-top: 10px;
+}
+.rectangle {
+    
+    width: 57%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    background-color: lightblue; /* Or your blue color */
+    display: flex; /* Enable Flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items to the top / / Changed this line */
+    padding-top: 20px; /* Add top padding to create space / / Changed this line */
+    gap: 20px; /* Adjust spacing between items */
+}
+
+.rectangle a {
+    padding-left: 70px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em; /* Adjust as needed */
+    padding: 15px 20px; /* Adjust as needed */
+    background-color: transparent; /* Or a different background color */
+    transition: background-color 0.3s ease;
+    border: none;
+    font-weight: bold; /* Adjust as needed */
+    transform: translateX(333px);
+    margin-top: 15px;
+}
+
+.rectangle a:hover {
+    color: white;
+}
+td, th{
+    border: 2.5px, solid, black;
+    border-collapse: collapse;
+}
+.present {
+    background-color: yellow;
+}
+.intro {
+    display: flex;
+    size: 200em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.intro article{
+    background-color: white;
+    width: 37.5%;
+    border-radius: 1em;
+    text-align: left;
+    font-size: 1em;
+    margin: 1%;
+    padding: 1em;
+    float: left;
+    margin-left: 5%; /* Adjust this value as needed */
+    margin-left: -1.5px; /* Điều chỉnh giá trị này nếu cần */
+    
+
+}
+article img{
+    float: left;
+    width: 30%;
+    height: 90%;
+    margin-top: auto;
+    margin-bottom: auto ;
+    border-radius: 2em;
+    margin-top: 3px;
+    margin-right: 30px;
+    
+}
+.abtBody{
+    background-color: rgb(173, 216, 230);
+    margin: 0;
+    position: relative;
+}
+#content-wrap {
+    padding-bottom: 15rem;    /* Footer height */
+  }
+  #page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+.tutor{
+    text-align: center;
+    background-color: #004aad;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15rem;            /* Footer height */
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.tutor img{
+    float: right;
+    width: 20%;
+    height: 95%;
+    margin-top: 2px;
+    margin-right: 20%;
+}
+.tutor h1{
+    font-size: 3em;
+    padding-top: 5%;
+    margin-top: -20px;
+}
+.tutor h2{
+    margin-left: 40%;
+    margin-bottom: 0%;
+    background-color: #004aad;
+}
+
+#com{
+    text-align: center;
+}
